@@ -4,7 +4,7 @@ Welcome to the official repository of the IRPA paper: [Efficiently Enhancing Lon
 ## Background
 Long-term series forecasting aims to predict future data over long horizons based on historical information. However, existing methods struggle to effectively utilize long lookback windows due to overfitting, computational resource constraints, or information extraction challenges, thereby limiting them to using limited lookback windows for predicting long-term future series. (As shown in the figure below, IRPA effectively mitigates these issues in the Weather dataset at prediction length k=720.)
 
-<img src="figures/length.jpg" width="50%"/>
+<img src="figures/length.jpg" width="66%"/>
 
 ## Overall Framework
 **We propose the IRPA framework, a lightweight and efficient plug-and-play solution for long-term series forecasting that effectively leverages ultra-long lookback windows.** IRPA comprises the Input Refinement Module (IRM) and the Prediction Auxiliary Module (PAM), each constructed with two linear sub-modules. The IRM decomposes and patches ultra-long series, refines seasonal and trend features to enhance information density within limited lookback windows, and mitigates overfitting and parameter bloat. The PAM extracts historical similarities and seasonal patterns from lookback windows, thereby significantly improving prediction accuracy.
