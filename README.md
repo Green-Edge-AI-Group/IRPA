@@ -13,16 +13,16 @@ Long-term series forecasting aims to predict future data over long horizons base
 
 ## Getting Started
 
-### Installation
+### Environment Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
-### Datasets
-The datasets can be obtained from [Google Drive](https://drive.google.com/file/d/1Nm9B3rNPRrlbWH3XPmbPQaZs2ky55XGs/view?usp=drive_link). Then place the downloaded data in the folder`./dataset`.
+### Data Preparation
+The datasets can be obtained from [Google Drive](https://drive.google.com/file/d/1Nm9B3rNPRrlbWH3XPmbPQaZs2ky55XGs/view?usp=drive_link). Then place the downloaded data in the folder `./dataset`.
 
 
-### Train and evaluate
+### Training Example
 
 ```bash
 # Multivariate forecasting
