@@ -26,7 +26,7 @@ The datasets can be obtained from [Google Drive](https://drive.google.com/file/d
 
 ```bash
 # Multivariate forecasting
-bash ./scripts/multivariate_forecasting/Weather/IRPA.sh
+bash ./scripts/weather.sh
 ...
 ```
 ## Citation
@@ -47,6 +47,6 @@ If you find this repo useful, please cite our paper.
 
 ## Acknowledgement
 
-We extend our heartfelt appreciation to the following GitHub repositories for providing valuable code bases and datasets:
+We extend our heartfelt appreciation to the following GitHub repository for providing valuable code bases and datasets:
 
 https://github.com/thuml/Time-Series-Library
