@@ -250,8 +250,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 pred = outputs
                 true = batch_y
 
-                mae, mse, rmse, mape, mspe = metric(pred, true)
-
                 preds.append(pred)
                 trues.append(true)
 
