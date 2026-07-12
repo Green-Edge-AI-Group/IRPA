@@ -72,9 +72,8 @@ class IRPA(nn.Module):
     def calculate_similarity(self, s, f, method=None):
         if method == "hellinger_distance":
             s = torch.softmax(s, -1)
-            f = torch.softmax(f, -1)
-            sf = torch.sum(torch.sqrt(s * f), dim=2)
-            return torch.sqrt(1 - sf)
+            sf = torch.sum(torch.sqrt(s * s[:,-1,:].unsqueeze(1)), dim=2)
+            return -torch.sqrt(torch.clamp(1 - sf, min=0.0))
         elif method == "manhattan_distance":
             return torch.norm(s - f, p=1, dim=2)
         elif method == "euclidean_distance":
